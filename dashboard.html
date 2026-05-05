@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Maps Email Extractor Dashboard</title>
+    <link href="lib/tabulator/css/semantic-ui/tabulator_semantic-ui.min.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <script type="text/javascript" src="lib/tabulator/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="lib/xlsx.full.min.js"></script>
+    <script src="js/util.js"></script>
+</head>
+
+<body>
+    <div id="maincontent">
+        <div id="content" class="dashboard-shell">
+            <header class="dashboard-header">
+                <div class="brand-lockup">
+                    <img class="brand-logo" src="icons/logo.png" alt="Maps Email Extractor logo" />
+                    <div>
+                        <h1>Email Export Dashboard</h1>
+                        <p>Review leads and download clean email lists.</p>
+                    </div>
+                </div>
+                <span id="accountinfo" class="status-pill">Open Source</span>
+            </header>
+
+            <div class="dashboard-toolbar">
+                <div class="export-actions">
+                    <button id="download-email-csv">Email CSV</button>
+                    <button id="download-email-txt">Email TXT</button>
+                    <button id="download-csv" class="secondary-action">Full CSV</button>
+                    <button id="download-xlsx" class="secondary-action">Full XLSX</button>
+                </div>
+            </div>
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <span>Rows</span>
+                    <strong id="row-count">0</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Unique emails</span>
+                    <strong id="email-count">0</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Last update</span>
+                    <strong id="last-update">Waiting</strong>
+                </div>
+            </section>
+            <section class="table-panel">
+                <div class="table-controls">
+                    <div class="table-size">
+                        <label for="page-size">Rows per page</label>
+                        <select id="page-size">
+                            <option value="10">10</option>
+                            <option value="25" selected>25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <button id="refresh-data" class="secondary-action">Refresh</button>
+                </div>
+                <div><span id="datastatus"></span></div>
+                <div id="example-table"></div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="js/dashboard.js"></script>
+
+</html>
