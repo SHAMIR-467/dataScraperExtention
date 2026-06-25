@@ -214,7 +214,9 @@ ul {
 
 .popup-header,
 .search-panel,
+.permission-panel,
 .quick-actions,
+.legal-note,
 .free-note {
     background: #ffffff;
     border: 1px solid #dbe3ef;
@@ -228,6 +230,26 @@ ul {
     justify-content: space-between;
     gap: 16px;
     padding: 18px;
+}
+
+.brand-header {
+    background: linear-gradient(135deg, #0b0f14 0%, #151b24 100%);
+    border-color: #1f2937;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.brand-header .brand-lockup h1 {
+    color: #f8fafc;
+}
+
+.brand-header .brand-lockup p {
+    color: #94a3b8;
+}
+
+.brand-header .brand-logo {
+    width: auto;
+    max-width: 180px;
+    height: 44px;
 }
 
 .brand-lockup {
@@ -322,9 +344,40 @@ ul {
     background: #1d4ed8;
 }
 
+.permission-panel {
+    padding: 16px 18px;
+}
+
+.permission-panel p {
+    margin: 0 0 12px;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.permission-panel p.permission-error {
+    color: #b91c1c;
+}
+
+.permission-panel button {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 6px;
+    padding: 0 14px;
+    background: #e2e8f0;
+    color: #0f172a;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.permission-panel button:hover {
+    background: #cbd5e1;
+}
+
 .quick-actions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
 }
 
@@ -343,11 +396,17 @@ ul {
     border-left: 1px solid #dbe3ef;
 }
 
-.free-note {
+.free-note,
+.legal-note {
     padding: 14px 16px;
     color: #475569;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.45;
+}
+
+.legal-note a {
+    color: #1d4ed8;
+    font-weight: 700;
 }
 
 @media (max-width: 480px) {
@@ -362,6 +421,11 @@ ul {
     .popup-header {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .brand-header .brand-logo {
+        max-width: 150px;
+        height: 38px;
     }
 
     .brand-logo {

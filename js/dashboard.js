@@ -230,7 +230,7 @@ function bindEvents() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("accountinfo").innerHTML = "Free Forever";
+    document.getElementById("accountinfo").innerHTML = "Powered by Xyber";
     bindEvents();
     loadData();
 });

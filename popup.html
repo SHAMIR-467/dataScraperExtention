@@ -3,38 +3,49 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Maps Email Extractor</title>
+    <title>Xyber Business Email Extractor</title>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="maincontent">
         <div id="content" class="popup-shell">
-            <header class="popup-header">
+            <header class="popup-header brand-header">
                 <div class="brand-lockup">
-                    <img class="brand-logo" src="icons/logo.png" alt="Maps Email Extractor logo" />
+                    <img class="brand-logo" src="icons/white-logo.png" alt="Xyber Business Email Extractor logo" />
                     <div>
-                        <h1>Maps Email Extractor</h1>
-                        <p>Free, local, and email-export ready.</p>
+                        <h1>Xyber Email Extractor</h1>
+                        <p>Collect and export public business emails locally.</p>
                     </div>
                 </div>
-                <span id="accountinfo" class="status-pill">Open Source</span>
+                <span id="accountinfo" class="status-pill">Powered by Xyber</span>
             </header>
 
             <section class="search-panel">
-                <label for="profileid">Google Maps search</label>
+                <label for="profileid">Map search query</label>
                 <div class="search-row">
                     <input type="text" id="profileid" value="coffee shop near new york" />
-                    <button id="addprofilebtn">Search Maps</button>
+                    <button id="addprofilebtn">Open Maps</button>
                 </div>
+            </section>
+
+            <section class="permission-panel">
+                <p id="permission-status">Enable website access to discover emails on public business websites.</p>
+                <button id="enable-website-access" type="button" class="secondary-action">Enable website access</button>
             </section>
 
             <section class="quick-actions">
                 <a href="dashboard.html" target="_blank">Open results dashboard</a>
-
+                <a href="privacy.html" target="_blank">Privacy policy</a>
+                <a href="help.html" target="_blank">Help</a>
             </section>
 
-          
+            <section class="legal-note">
+                <p>
+                    Not affiliated with Google. Google Maps is a trademark of Google LLC.
+                    Use only on public business data you are allowed to collect.
+                </p>
+            </section>
         </div>
     </div>
 </body>
