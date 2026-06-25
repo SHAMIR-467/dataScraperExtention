@@ -1,0 +1,250 @@
+================================================================================
+                    TXYBER BUSINESS EMAIL EXTRACTOR
+                         User Guide - Version 1.9.2
+================================================================================
+
+Turn map listings into export-ready business email lists — locally, privately,
+on your terms.
+
+Website:    https://txyber.com
+Help file:  datascraper map\help.html
+Privacy:    datascraper map\privacy.html
+
+
+================================================================================
+WHAT THIS EXTENSION DOES
+================================================================================
+
+Txyber Business Email Extractor is a Chrome extension for sales, marketing,
+and outreach teams. It collects PUBLIC business contact data from map search
+results. Your data stays on your computer — it is not sent to the cloud.
+
+Main features:
+
+  - Works while you browse business listings on Google Maps
+  - Finds published emails from public business websites (optional)
+  - Shows a live dashboard with lead counts and unique emails
+  - Export to CSV, TXT, or XLSX — all saved locally in your browser
+  - Optional website access — you choose when to allow it
+  - Powered by Txyber (https://txyber.com)
+
+IMPORTANT DISCLAIMER:
+This extension is NOT affiliated with, endorsed by, or sponsored by Google.
+Google Maps is a trademark of Google LLC.
+Use only on public business data you are legally allowed to collect.
+
+
+================================================================================
+HOW TO INSTALL
+================================================================================
+
+STEP 1 — Find the correct folder
+
+After you download or unzip the project, open this folder:
+
+  datascraper map LATEST
+      └── datascraper map     <-- SELECT THIS FOLDER
+
+Inside "datascraper map" you should see manifest.json, popup.html,
+dashboard.html, and an icons folder.
+
+
+STEP 2 — Load in Chrome
+
+  1. Open Chrome and type in the address bar:  chrome://extensions/
+  2. Turn ON "Developer mode" (switch at the top right)
+  3. Click "Load unpacked"
+  4. Select the "datascraper map" folder (the one with manifest.json)
+
+
+STEP 3 — Pin the extension
+
+  1. Click the puzzle piece icon in Chrome's toolbar
+  2. Find "Txyber Business Email Extractor"
+  3. Click the pin icon so it stays visible
+
+
+================================================================================
+HOW TO USE — STEP BY STEP
+================================================================================
+
+STEP 1 — Open the popup
+
+  Click the Txyber icon in your Chrome toolbar.
+
+  You will see:
+    - A search box for your map query
+    - "Open Maps" button
+    - "Enable website access" button (optional)
+    - Links to Dashboard, Privacy, and Help
+
+
+STEP 2 — Start a map search
+
+  1. Type a search, for example:  coffee shop near new york
+  2. Click "Open Maps"
+  3. Google Maps opens with your search results
+
+
+STEP 3 — Extract business listings
+
+  On the Google Maps page, look for the Txyber floating panel.
+
+  1. Click "Start Auto Extract"
+  2. Watch the "Leads" number go up as listings are collected
+  3. Click "Stop Auto Extract" when you have enough results
+
+
+STEP 4 — Find emails (optional)
+
+  To discover emails from public business websites:
+
+  1. Open the extension popup again
+  2. Click "Enable website access"
+  3. Click Allow when Chrome asks for permission
+
+  Note: This is optional. It only visits public business websites linked
+  from the map listings — not random pages on the internet.
+
+
+STEP 5 — Review and export your data
+
+  1. In the popup, click "Open results dashboard"
+  2. Review your table (names, phones, addresses, websites, emails)
+  3. Click one of the export buttons:
+
+       Email CSV  — clean list of emails only (CSV format)
+       Email TXT  — one email address per line
+       Full CSV   — all collected columns
+       Full XLSX  — full data in Excel format
+
+  All files are created on your computer. Nothing is uploaded to Txyber.
+
+
+================================================================================
+LOGO AND BRAND ASSETS
+================================================================================
+
+Official logo files are inside the extension folder:
+
+  datascraper map\icons\icon128.png    — large icon (store, marketing)
+  datascraper map\icons\icon48.png     — medium icon (toolbar)
+  datascraper map\icons\icon32.png     — small icon
+  datascraper map\icons\icon16.png     — tiny icon
+  datascraper map\icons\white-logo.png — white logo for dark backgrounds
+
+YOU MAY use Txyber logos when:
+  - You are showing or reviewing this official extension
+  - You write a tutorial or case study and credit Txyber
+  - You use "Powered by Txyber" in approved partner materials
+
+YOU MAY NOT:
+  - Change logo colors or shape without written approval
+  - Suggest Google partnership or misuse Google branding
+  - Use Txyber logos on unrelated products or copied versions
+
+For press kits or custom logo requests, visit:  https://txyber.com
+
+
+================================================================================
+TXYBER LICENSE
+================================================================================
+
+Copyright (c) 2026 Txyber. All rights reserved.
+
+Txyber Business Email Extractor is proprietary software published by Txyber.
+Website: https://txyber.com
+
+  Personal or commercial USE of this extension as distributed .... YES
+  Reselling or repackaging this extension ......................... NO
+  Copying and publishing under your own brand ................... NO
+  Removing "Powered by Txyber" branding ....................... NO
+  Reverse engineering for a competing product ................... NO
+
+This software is provided "as is" without warranty. You are responsible for
+following local laws, anti-spam rules (CAN-SPAM, GDPR, etc.), and the terms
+of any platform where you use collected data.
+
+For licensing, partnerships, or enterprise use, contact Txyber:
+  https://txyber.com
+
+
+================================================================================
+HOW YOU CAN HELP
+================================================================================
+
+LEAVE A REVIEW
+  If you installed from the Chrome Web Store, a 5-star review with a short
+  comment helps other users find us.
+
+REPORT BUGS
+  Tell us your Chrome version, what you clicked, and what went wrong.
+  Contact: https://txyber.com
+
+REQUEST FEATURES
+  Need a new export format or filter? Send your ideas through the website.
+
+SHARE WITH OTHERS
+  Tell teammates who do lead generation, local SEO, or B2B sales.
+
+PARTNER WITH TXYBER
+  Agencies and businesses can ask about integrations and volume licensing.
+  Visit: https://txyber.com
+
+
+================================================================================
+PERMISSIONS EXPLAINED
+================================================================================
+
+Storage
+  Saves your collected leads inside your browser only.
+
+Website access (optional)
+  Lets the extension visit public business websites from listings to find
+  published email addresses. You must click to enable this.
+
+Google Maps access
+  Shows the extract buttons only on Google Maps search pages.
+
+Your lead lists are NOT uploaded to Txyber servers.
+Full details: datascraper map\privacy.html
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: "Failed to load extension" or manifest error
+
+  Fix:
+    - Load the "datascraper map" folder, NOT the parent folder
+    - Make sure manifest.json is inside the folder you select
+    - Use the latest version of the extension files
+
+
+Problem: Extract button does not appear on Maps
+
+  Fix:
+    - Refresh the Google Maps tab
+    - Make sure you are on a Maps search page (URL contains /maps/)
+    - Check the extension is turned on at chrome://extensions/
+
+
+Problem: No emails found
+
+  Fix:
+    - Click "Enable website access" in the popup
+    - Make sure the business listing has a website link
+    - Some businesses do not publish emails online — that is normal
+
+
+================================================================================
+CONTACT
+================================================================================
+
+  Txyber
+  https://txyber.com
+
+  Collect smarter. Export locally. Own your leads.
+
+================================================================================
